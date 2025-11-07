@@ -1,0 +1,149 @@
+.container{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.laranjas{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    flex-direction: column;
+    gap: 5px;
+}
+.azuis{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    flex-direction: column;
+    gap: 5px;
+}
+.cinzas{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    flex-direction: column;
+    gap: 5px;
+}
+.filho{
+    width: 150px;
+    height: 100px;
+    background-color: rgb(255, 136, 0);
+}
+
+.amarelo{
+    width: 150px;
+    height: 200px;
+    background-color: rgb(255, 221, 0);
+}
+
+.azul{
+    background-color: rgb(74, 74, 202);
+    width: 150px;
+    height: 300px;
+}
+
+.cinza{
+    background-color: rgb(190, 190, 190);
+    width: 150px;
+    height: 300px;
+
+}
+
+@media(max-width:165px){
+    .filho{
+        width: 150px;
+        height: 40px;
+    }
+    .amarelo{
+        width: 150px;
+        height: 60px;
+    }
+    .azul{
+        width: 150px;
+        height: 120px;
+    }
+    .cinza{
+        width: 150px;
+        height: 15px;
+    }
+    .cinzas{
+        gap: 0px;
+
+        height: 50px;
+    }
+    .azuis{
+        height: 350px;
+    }
+}
+@media(min-width:165px) and (max-width:600px){
+    .filho{
+        width: 100%;
+        height: 50px;
+    }
+    .amarelo{
+        width: 100%;
+        height: 150px;
+    }
+    .azul{
+        width: 100%;
+        height: 65px;
+    }
+    .azuis{
+        height: 200px;
+    }
+    .cinza{
+        width: 49%;
+        height: 55px;
+
+    }
+    .cinzas{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+        height: 100px;
+        gap: 3px;
+    }
+
+}
+@media(min-width:600px){
+    .laranjas{
+        flex-direction: row;
+        height: 60px;
+
+    }
+    .azuis{
+        flex-direction: row;
+        gap: 10px;
+        height: 160px;
+
+    }
+    .filho{
+        width: 50%;
+        height: 60px;
+    }
+
+    .amarelo{
+        width: 100%;
+        height: 250px;
+    }
+    .azul{
+        width: 33%;
+        height: 160px;
+        flex-wrap: wrap; 
+        flex-direction: row;
+    }
+    .container{
+        gap: 15px;
+    }
+    .cinza{
+        width: 25%;
+        height: 80px;
+        flex-wrap: wrap; 
+        flex-direction: row;
+    }
+    .cinzas{
+        gap: 7px;
+        flex-direction: row;
+    }
+}

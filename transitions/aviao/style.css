@@ -1,0 +1,47 @@
+.aviao{
+    width: 200px;
+    height: 200px;
+    /* transition: width 0.3s ease, height 1.5s ease-out; */
+    position: relative;
+    animation-name: animaAviao;
+    animation-duration: 7s; 
+    animation-fill-mode:forwards;
+    animation-timing-function: linear;   
+}
+
+.aviao:hover{
+    width: 300px;
+    height: 300px;
+
+}
+
+@keyframes animaAviao{
+    0%{
+        width: 200px;
+        height: 200px;
+        top: 0px;
+
+    }
+    50%{
+        width: 400px;
+        height: 210px;
+        margin-left: 50%;
+        top: 150px;
+    }
+    80%{
+        width: 400px;
+        height: 210px;
+        margin-left: 50%;
+
+    }
+    100%{
+        width: 350px;
+        height: 200px;
+        /* background-color: rgb(255, 0, 179); */
+        margin-left: 50%;
+        top:200px;
+
+
+    }
+
+}

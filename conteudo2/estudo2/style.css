@@ -1,0 +1,134 @@
+    .container{
+        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        width: 1500px;
+        height: 1500px;
+        align-items: center;
+        
+    }
+
+@media(min-width: 451px){
+    .roxo{
+        background-color: rgb(163, 93, 229);
+        width: 1400px;
+        margin-top: 20px;
+        height: 500px;
+    }
+    .laranja{
+        background-color: orange;
+        position: absolute;
+        margin-top: 170px;
+        margin-right: 800px;
+        width: 600px;
+        height: 200px;
+    }
+    .vermelho{
+        background-color: rgb(163, 8, 8);
+        width: 1500px;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        
+    }
+    .azul{
+        background-color: rgb(72, 72, 237);
+        width: 250px;
+        height: 80px;
+        display: flex;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .verde{
+        background-color: rgb(45, 168, 45);
+        width: 250px;
+        height: 80px;
+        position:absolute;
+        margin-left: 1150px;
+        margin-top: 570px;
+        
+    }
+    .laranjas, .laranjas2{
+        width: 1400px;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .laranjaGrande{
+        background-color: orange;
+        width: 650px;
+        height: 300px;
+        margin-top: 20px;
+        display: flex;
+        align-items: end;
+    }
+    .vermelinho{
+        width: 650px;
+        height: 50px;
+        background-color: rgb(163, 8, 8);
+        
+    }
+}
+
+@media(min-width: 0px) and (max-width: 450px){
+    .container{
+        width: 450px;
+
+    }
+    .roxo{
+        background-color: rgb(163, 93, 229);
+        width: 450px;
+        height: 220px;
+    }
+    .laranja{
+        background-color: orange;
+        width: 450px;
+        height: 50px;
+        margin-top: 5px;
+    }
+    .vermelho{
+        background-color: rgb(148, 9, 9);
+        width: 450px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        flex-direction: column;
+        margin-top: 5px;
+        
+    }
+    .azul{
+        background-color: rgb(72, 72, 237);
+        width: 400px;
+        height: 25px;
+    }
+    .verde{
+        background-color: rgb(45, 168, 45);
+        width: 400px;
+        height: 100px;
+        border: 2px black;
+        margin-top: 20px;
+    }
+    .laranjas, .laranjas2{
+        gap:10px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .laranjaGrande{
+        background-color: orange;
+        width: 400px;
+        height: 200px;
+        align-items: center;
+        display: flex;
+    }
+    .vermelinho{
+        background-color: rgb(148, 9, 9);
+        width: 150px;
+        height: 80px;
+    }
+}

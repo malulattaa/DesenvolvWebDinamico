@@ -1,0 +1,56 @@
+.container{
+    display: flex;
+    gap: 20px;
+    resize: both;
+    overflow: hidden;
+}
+
+@media(max-width:800px){
+    .container{
+        flex-direction: column;
+    }
+}
+
+.filho{
+    width: 150px;
+    height: 150px;
+    background-color: var(--cor-quadrados);
+}
+
+:root{
+    --cor-quadrados: rgb(25, 124, 177);
+    --largura-quadrados: 200px;
+}
+
+.menu{
+    background-color: var(--cor-quadrados);
+    /* width: clamp(min,25%,max); */
+    width: clamp(250px,25%,400px);
+    height: 250px;
+    display: flex;
+    gap:20px;
+    container-type: inline-size;
+    container-name: menu;
+    resize: both;
+    overflow: hidden;
+}
+
+.bt{
+    background-color: blue;
+    width: 80px;
+    height: 80px;
+}
+
+@container menu (width>350px){
+    .bt{
+        background-color: brown;
+    }
+}
+
+@media(min-width:400px) and (max-width:800px){
+    .filho{
+        width: 100%;
+        height: 50px;
+
+    }
+}

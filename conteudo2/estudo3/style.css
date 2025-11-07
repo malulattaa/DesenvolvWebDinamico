@@ -1,0 +1,139 @@
+.container{
+    width: 2000px;
+    height: 4000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.laranjas{
+    display:flex;
+    flex-direction: column;
+}
+.azuis{
+    display: flex;
+    flex-direction: column;
+}
+.cinzas{
+    display: flex;
+    
+}
+.cinzas2{
+    display: flex;
+
+}
+.laranja{
+    
+    background-color: orange;
+}
+.amarelo{
+    background-color: yellow;
+}
+.azul{
+    background-color: rgb(91, 91, 208);
+}
+.cinza{
+    background-color: rgb(205, 199, 199);
+}
+
+@media(max-width: 300px){
+    .laranja{
+        width: 290px;
+        height: 90px;
+        margin-bottom: 10px;
+    }
+    .amarelo{
+        width: 290px;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+    .azul{
+        width: 290px;
+        height: 280px;
+        margin-bottom: 10px;
+    }
+    .cinza{
+        width: 290px;
+        height: 20px;
+        
+    }
+    .cinzas, .cinzas2{
+        flex-direction: column;
+    }
+}
+@media(min-width: 310px) and (max-width: 900px){
+    .laranja{
+        width: 880px;
+        height: 70px;
+        margin-bottom: 7px;
+    }
+    .amarelo{
+        width: 880px;
+        height: 300px;
+        margin-bottom: 5px;
+    }
+    .azul{
+        width: 880px;
+        height: 70px;
+        margin-bottom: 5px;
+    }
+    .cinza{
+        width: 430px;
+        height: 80px;
+    }
+    .cinzas{
+        width: 880px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .cinzaGeral{
+        width: 880px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media(min-width: 901px){
+    .laranjas{
+        flex-direction: row;
+        height: 100px;
+        width: 1200px;
+        gap: 10px;
+    }
+    .laranja{
+        width: 600px;
+        height: 90px;
+    }
+    .amarelo{
+        width: 1200px;
+        height: 500px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .azuis{
+        flex-direction: row;
+        gap: 20px;
+    }
+    .azul{
+        width: 385px;
+        height: 300px;
+    }
+    .cinzas{
+        flex-direction: row;
+        gap: 20px;
+    }
+    .cizaGeral{
+        flex-direction: row;
+        display: flex;
+        width: 1000px;
+        height: 500px;
+        
+    }
+    .cinza{
+        margin-top: 40px;
+        width: 284px;
+        height: 200px;
+    }
+}
