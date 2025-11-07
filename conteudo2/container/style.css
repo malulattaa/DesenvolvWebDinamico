@@ -1,0 +1,20 @@
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card {
+    container-type: inline-size;
+    /* vira um container observável */
+    width: 100%;
+    max-width: 300px;
+    background: lightblue;
+}
+
+/* regra baseada no tamanho do próprio card */
+@container (max-width: 250px) {
+    .card {
+        background: lightcoral;
+    }
+}

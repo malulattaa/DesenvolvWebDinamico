@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo @container</title>
+    <style>
+        .wrapper {
+            width: 80%;
+            border: 3px solid purple;
+            padding: 10px;
+            resize: horizontal;
+            /* permite redimensionar o container com o mouse */
+            overflow: auto;
+            container-type: inline-size;
+            /* transforma o wrapper em container */
+        }
+
+        .caixa {
+            width: 100%;
+            height: 200px;
+            background: lightblue;
+            text-align: center;
+            line-height: 200px;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+
+        /* Quando o CONTAINER (wrapper) ficar menor que 400px */
+        @container (max-width: 400px) {
+            .caixa {
+                background: tomato;
+                color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="caixa">@container</div>
+    </div>
+</body>
+</html>
